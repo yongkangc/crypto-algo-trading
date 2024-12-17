@@ -95,9 +95,7 @@ The Bellman-Ford algorithm can detect negative cycles in a graph when edge weigh
 
 1. **Convert Prices to Logarithms**:
 
-   \[
-   w\_{u \rightarrow v} = -\ln\left(\text{Exchange Rate from } u \text{ to } v\right)
-   \]
+   <img src="https://latex.codecogs.com/svg.latex?w_{u%20\rightarrow%20v}%20=%20-\ln(\text{Exchange%20Rate%20from%20}%20u%20\text{%20to%20}%20v)" />
 
 2. **Detect Negative Cycles**:
 
@@ -114,9 +112,7 @@ The Bellman-Ford algorithm can detect negative cycles in a graph when edge weigh
 
 - **Uniswap V2** follows the **Constant Product Market Maker (CPMM)** model:
 
-  \[
-  x \cdot y = k
-  \]
+  <img src="https://latex.codecogs.com/svg.latex?x%20\cdot%20y%20=%20k" />
 
   where:
 
@@ -129,9 +125,7 @@ The Bellman-Ford algorithm can detect negative cycles in a graph when edge weigh
 
 Given an input amount \( \Delta x \), the output amount \( \Delta y \) is:
 
-\[
-\Delta y = y - \frac{k}{x + \gamma \Delta x}
-\]
+<img src="https://latex.codecogs.com/svg.latex?\Delta%20y%20=%20y%20-%20\frac{k}{x%20+%20\gamma%20\Delta%20x}" />
 
 where \( \gamma = 1 - \text{Fee Rate} \).
 
@@ -216,13 +210,7 @@ The reward should:
 
 **Example Reward Function**:
 
-\[
-r_t =
-\begin{cases}
-\Delta P_t - \text{Costs}, & \text{if action is Exit} \\
-0, & \text{if action is Hold}
-\end{cases}
-\]
+<img src="https://latex.codecogs.com/svg.latex?r_t%20=%20\begin{cases}%20\Delta%20P_t%20-%20\text{Costs},%20&%20\text{if%20action%20is%20Exit}%20\\%200,%20&%20\text{if%20action%20is%20Hold}%20\end{cases}" />
 
 where \( \Delta P_t \) is the profit or loss realized upon exiting.
 
@@ -297,9 +285,7 @@ where \( \Delta P_t \) is the profit or loss realized upon exiting.
 
 - **Normalized Price Changes**:
 
-  \[
-  \text{Normalized Price}_t = \frac{\text{Price}\_t - \text{Price}_{t-1}}{\text{ATR}\_t}
-  \]
+  <img src="https://latex.codecogs.com/svg.latex?\text{Normalized%20Price}_t%20=%20\frac{\text{Price}_t%20-%20\text{Price}_{t-1}}{\text{ATR}_t}" />
 
   where \( \text{ATR}\_t \) is the Average True Range, a measure of market volatility.
 
@@ -307,17 +293,13 @@ where \( \Delta P_t \) is the profit or loss realized upon exiting.
 
   - **Volume Change**:
 
-    \[
-    \text{Volume Change}\_t = \frac{\text{Volume}\_t - \text{MA Volume}\_t}{\text{MA Volume}\_t}
-    \]
+    <img src="https://latex.codecogs.com/svg.latex?\text{Volume%20Change}_t%20=%20\frac{\text{Volume}_t%20-%20\text{MA%20Volume}_t}{\text{MA%20Volume}_t}" />
 
     where \( \text{MA Volume}\_t \) is the moving average of volume.
 
 - **Cumulative Return**:
 
-  \[
-  \text{Cumulative Return}_t = \prod_{i=t-N+1}^{t} \left(1 + \frac{\text{Close}\_i - \text{Open}\_i}{\text{Open}\_i}\right) - 1
-  \]
+  <img src="https://latex.codecogs.com/svg.latex?\text{Cumulative%20Return}_t%20=%20\prod_{i=t-N+1}^{t}%20\left(1%20+%20\frac{\text{Close}_i%20-%20\text{Open}_i}{\text{Open}_i}\right)%20-%201" />
 
 **Labeling Data**:
 
