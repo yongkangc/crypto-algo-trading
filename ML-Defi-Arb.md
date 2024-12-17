@@ -288,21 +288,27 @@ where \( \Delta P_t \) is the profit or loss realized upon exiting.
 
 - **Normalized Price Changes**:
 
-  $\text{Normalized Price}_t = \frac{\text{Price}_t - \text{Price}_{t-1}}{\text{ATR}_t}$
+```math
+\text{Normalized Price}_t = \frac{\text{Price}_t - \text{Price}_{t-1}}{\text{ATR}_t}
+```
 
-  where \( \text{ATR}_t \) is the Average True Range, a measure of market volatility.
+where $\text{ATR}_t$ is the Average True Range, a measure of market volatility.
 
 - **Volume Indicators**:
 
   - **Volume Change**:
 
-    $\text{Volume Change}_t = \frac{\text{Volume}_t - \text{MA Volume}_t}{\text{MA Volume}_t}$
+```math
+\text{Volume Change}_t = \frac{\text{Volume}_t - \text{MA Volume}_t}{\text{MA Volume}_t}
+```
 
-    where \( \text{MA Volume}_t \) is the moving average of volume.
+  where $\text{MA Volume}_t$ is the moving average of volume.
 
 - **Cumulative Return**:
 
-  $\text{Cumulative Return}_t = \prod_{i=t-N+1}^{t} \left(1 + \frac{\text{Close}_i - \text{Open}_i}{\text{Open}_i}\right) - 1$
+```math
+\text{Cumulative Return}_t = \prod_{i=t-N+1}^{t} \left(1 + \frac{\text{Close}_i - \text{Open}_i}{\text{Open}_i}\right) - 1
+```
 
 **Labeling Data**:
 
